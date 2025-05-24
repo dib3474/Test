@@ -1,0 +1,14 @@
+1) git branch feature
+2) echo "안녕하세요. 여기는 main 브랜치입니다." > conflict_test.txt
+3) git add .
+4) git commit -m "main 브랜치"
+5) git checkout feature
+6) echo "반갑습니다, 여기는 feature 브랜치입니다." > conflict_test.txt
+7) git add .
+8) git commit -m "feature 브랜치"
+9) git rebase main
+10) 충돌 발생 -> conflict_test.txt 수정
+11) git add conflict_test.txt
+12) git rebase --continue
+13) git log --oneline
+14) git push origin main
