@@ -12,3 +12,4 @@
 12) git rebase --continue
 13) git log --oneline
 14) git push origin main
+15) git push origin feature
